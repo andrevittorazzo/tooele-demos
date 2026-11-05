@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Gentry | Premium Grooming & Barbering</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; background-color: #0a0a0a; color: #e5e5e5; }
+        h1, h2, h3 { font-family: 'Playfair Display', serif; }
+        .gold-text { color: #c5a059; }
+        .gold-bg { background-color: #c5a059; }
+        .gold-border { border-color: #c5a059; }
+        .hero-overlay { background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.9)); }
+        .card-glass { background: rgba(255, 255, 255, 0.03); backdrop-filter: blur(10px); border: 1px solid rgba(197, 160, 89, 0.2); }
+        .btn-transition { transition: all 0.3s ease; }
+        .btn-transition:hover { transform: translateY(-2px); box-shadow: 0 10px 20px rgba(197, 160, 89, 0.2); }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 px-6 py-4 flex justify-between items-center transition-all duration-300" id="nav">
+        <div class="text-2xl font-bold gold-text tracking-tighter uppercase">The Gentry</div>
+        <div class="hidden md:flex space-x-8 text-sm uppercase tracking-widest font-semibold">
+            <a href="#services" class="hover:text-[#c5a059] transition-colors">Services</a>
+            <a href="#about" class="hover:text-[#c5a059] transition-colors">The Experience</a>
+            <a href="#gallery" class="hover:text-[#c5a059] transition-colors">Gallery</a>
+        </div>
+        <a href="#booking" class="gold-bg text-black px-6 py-2 text-xs font-bold uppercase tracking-widest btn-transition rounded-sm">Book Appointment</a>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative h-screen flex items-center justify-center text-center px-4 overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <img src="https://images.unsplash.com/photo-1503951906201-6a51ef9e675a?auto=format&fit=crop&q=80&w=2000" class="w-full h-full object-cover" alt="Barber Shop Interior">
+            <div class="absolute inset-0 hero-overlay"></div>
+        </div>
+        <div class="relative z-10 max-w-4xl">
+            <span class="gold-text uppercase tracking-[0.3em] text-sm mb-4 block font-semibold">Est. 2024 | Tooele, Utah</span>
+            <h1 class="text-5xl md:text-8xl text-white mb-6 leading-tight">Mastery in Every <br><span class="gold-text italic">Single Cut</span></h1>
+            <p class="text-lg md:text-xl text-gray-400 mb-10 max-w-2xl mx-auto font-light leading-relaxed">
+                Where traditional craftsmanship meets modern precision. Experience the gold standard of grooming in a sanctuary designed for the discerning gentleman.
+            </p>
+            <div class="flex flex-col md:flex-row gap-4 justify-center">
+                <a href="#booking" class="gold-bg text-black px-10 py-4 text-sm font-bold uppercase tracking-widest btn-transition rounded-sm">Secure Your Chair</a>
+                <a href="#services" class="border gold-border text-white px-10 py-4 text-sm font-bold uppercase tracking-widest btn-transition rounded-sm hover:bg-[#c5a059] hover:text-black">Explore Services</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-24 px-6 max-w-7xl mx-auto">
+        <div class="text-center mb-20">
+            <h2 class="text-4xl md:text-6xl text-white mb-4">The Rituals</h2>
+            <div class="w-20 h-1 gold-bg mx-auto mb-6"></div>
+            <p class="text-gray-400 max-w-xl mx-auto font-light">Tailored grooming experiences designed to elevate your appearance and your mindset.</p>
+        </div>
+        
+        <div class="grid md:grid-cols-3 gap-8">
+            <!-- Service 1 -->
+            <div class="card-glass p-8 rounded-sm text-center btn-transition group">
+                <div class="w-16 h-16 gold-bg text-black rounded-full flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.121 14.121L19 19m-7-7l7-7m-7 7l-2.879-2.879M12 12L9.121 9.121m0 0L5 5m4 4l2.879 2.879" />
+                    </svg>
+                </div>
+                <h3 class="text-2xl text-white mb-4">Precision Cut</h3>
+                <p class="text-gray-400 font-light mb-6">A master-level haircut tailored to your head shape and style. Includes a consultation, precision cut, and neck shave.</p>
+                <span class="gold-text font-bold text-xl">$45+</span>
+            </div>
+
+            <!-- Service 2 -->
+            <div class="card-glass p-8 rounded-sm text-center btn-transition group">
+                <div class="w-16 h-16 gold-bg text-black rounded-full flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                </div>
+                <h3 class="text-2xl text-white mb-4">Beard Sculpting</h3>
+                <p class="text-gray-400 font-light mb-6">Professional beard trimming, shaping, and conditioning. Finished with a steaming hot towel and straight razor line.</p>
+                <span class="gold-text font-bold text-xl">$30+</span>
+            </div>
+
+            <!-- Service 3 -->
+            <div class="card-glass p-8 rounded-sm text-center btn-transition group">
+                <div class="w-16 h-16 gold-bg text-black rounded-full flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" />
+                    </svg>
+                </div>
+                <h3 class="text-2xl text-white mb-4">The Royal Shave</h3>
+                <p class="text-gray-400 font-light mb-6">The ultimate luxury. Hot towel treatment, premium lather, and a slow, methodical straight razor shave.</p>
+                <span class="gold-text font-bold text-xl">$60+</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-24 bg-[#0f0f0f] overflow-hidden">
+        <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-16 items-center">
+            <div class="relative">
+                <img src="https://images.unsplash.com/photo-1585747860715-2ba37973f886?auto=format&fit=crop&q=80&w=1000" class="rounded-sm grayscale hover:grayscale-0 transition-all duration-700" alt="Barber Working">
+                <div class="absolute -bottom-6 -right-6 w-48 h-48 gold-bg -z-10 opacity-20 rounded-full blur-3xl"></div>
+            </div>
+            <div>
+                <h2 class="text-4xl md:text-6xl text-white mb-6 leading-tight">Tradition <br><span class="gold-text italic">Reimagined</span></h2>
+                <p class="text-gray-400 text-lg font-light leading-relaxed mb-8">
+                    We believe a haircut is more than just a service—it's a ritual. At The Gentry, we combine the timeless art of the traditional barbershop with a modern, luxury approach to grooming. 
+                </p>
+                <p class="text-gray-400 text-lg font-light leading-relaxed mb-10">
+                    Our master barbers are trained in the finest techniques, ensuring that every client leaves the chair feeling like the best version of themselves.
+                </p>
+                <div class="flex items-center space-x-4">
+                    <div class="w-12 h-12 rounded-full border gold-border flex items-center justify-center text-gold-text font-bold">G</div>
+                    <span class="text-sm uppercase tracking-widest font-semibold">The Gentry Standard</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="py-24 px-6 max-w-7xl mx-auto">
+        <div class="text-center mb-20">
+            <h2 class="text-4xl md:text-6xl text-white mb-4">The Portfolio</h2>
+            <div class="w-20 h-1 gold-bg mx-auto mb-6"></div>
+        </div>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+            <img src="https://images.unsplash.com/photo-1621605815971-fca757647a89?auto=format&fit=crop&q=80&w=600" class="w-full h-64 object-cover grayscale hover:grayscale-0 transition-all duration-500 cursor-pointer" alt="Haircut 1">
+            <img src="https://images.unsplash.com/photo-1599351431202-ed3949466777?auto=format&fit=crop&q=80&w=600" class="w-full h-64 object-cover grayscale hover:grayscale-0 transition-all duration-500 cursor-pointer" alt="Haircut 2">
+            <img src="https://images.unsplash.com/photo-1622286332618-f2866757a10c?auto=format&fit=crop&q=80&w=600" class="w-full h-64 object-cover grayscale hover:grayscale-0 transition-all duration-500 cursor-pointer" alt="Haircut 3">
+            <img src="https://images.unsplash.com/photo-1503951906201-6a51ef9e675a?auto=format&fit=crop&q=80&w=600" class="w-full h-64 object-cover grayscale hover:grayscale-0 transition-all duration-500 cursor-pointer" alt="Haircut 4">
+        </div>
+    </section>
+
+    <!-- Booking Section -->
+    <section id="booking" class="py-24 bg-[#0a0a0a] relative overflow-hidden">
+        <div class="absolute top-0 left-0 w-full h-full opacity-10 pointer-events-none">
+            <div class="absolute top-[-10%] left-[-10%] w-[40%] h-[40%] gold-bg blur-[120px]"></div>
+            <div class="absolute bottom-[-10%] right-[-10%] w-[40%] h-[40%] gold-bg blur-[120px]"></div>
+        </div>
+        <div class="max-w-3xl mx-auto px-6 text-center relative z-10">
+            <h2 class="text-4xl md:text-6xl text-white mb-6">Claim Your Chair</h2>
+            <p class="text-gray-400 text-lg font-light mb-12">Join the ranks of the well-groomed. Book your experience today.</p>
+            <div class="card-glass p-10 rounded-sm">
+                <form class="grid md:grid-cols-2 gap-6 text-left">
+                    <div class="flex flex-col">
+                        <label class="text-xs uppercase tracking-widest text-gray-500 mb-2">Full Name</label>
+                        <input type="text" class="bg-transparent border-b gold-border py-2 outline-none text-white placeholder-gray-600" placeholder="John Doe">
+                    </div>
+                    <div class="flex flex-col">
+                        <label class="text-xs uppercase tracking-widest text-gray-500 mb-2">Email Address</label>
+                        <input type="email" class="bg-transparent border-b gold-border py-2 outline-none text-white placeholder-gray-600" placeholder="john@example.com">
+                    </div>
+                    <div class="flex flex-col md:col-span-2">
+                        <label class="text-xs uppercase tracking-widest text-gray-500 mb-2">Preferred Ritual</label>
+                        <select class="bg-transparent border-b gold-border py-2 outline-none text-white placeholder-gray-600">
+                            <option class="bg-black text-white">Precision Cut</option>
+                            <option class="bg-black text-white">Beard Sculpting</option>
+                            <option class="bg-black text-white">The Royal Shave</option>
+                            <option class="bg-black text-white">Full Gentry Experience</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="md:col-span-2 gold-bg text-black py-4 text-sm font-bold uppercase tracking-widest btn-transition rounded-sm mt-4">Request Appointment</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12 border-t border-white/10 text-center px-6">
+        <div class="text-xl font-bold gold-text tracking-tighter uppercase mb-4">The Gentry</div>
+        <p class="text-gray-500 text-xs uppercase tracking-widest">© 2024 The Gentry Grooming. All Rights Reserved.</p>
+        <div class="flex justify-center space-x-6 mt-6 text-gray-400">
+            <a href="#" class="hover:text-white transition-colors">Instagram</a>
+            <a href="#" class="hover:text-white transition-colors">Facebook</a>
+            <a href="#" class="hover:text-white transition-colors">Yelp</a>
+        </div>
+    </footer>
+
+    <script>
+        window.addEventListener('scroll', function() {
+            const nav = document.getElementById('nav');
+            if (window.scrollY > 50) {
+                nav.classList.add('bg-black/90', 'backdrop-blur-md', 'py-2');
+                nav.classList.remove('py-4');
+            } else {
+                nav.classList.remove('bg-black/90', 'backdrop-blur-md', 'py-2');
+                nav.classList.add('py-4');
+            }
+        });
+    </script>
+</body>
+</html>
